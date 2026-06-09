@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     color: white;
-    border: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -53,6 +53,9 @@ button {
 .hero-section {
     height: 675px;
     background-color: #100421;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -111,13 +114,13 @@ button {
 }
 
 .content {
-    width: 30%;
+    width: 60%;
     padding: 8%;
 }
 
 .buttons {
+    margin-top: 10%;
     display: flex;
-    padding-left: 8%;
 }
 
 .button1 {
@@ -138,3 +141,23 @@ button {
     display: flex;
     align-items: center;
 }
+
+.links {
+    padding-top: 8%;
+}
+
+.links a {
+    padding: 0.8%;
+}
+
+/*
+picture
+*/
+
+.picture {
+    height: 70%;
+    width: 50%;
+    background-image: url(./image.png);
+    background-size: cover;
+}
+
