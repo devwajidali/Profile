@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+/* Navbar */
+
 
 header {
     height: 60px;
@@ -13,6 +15,9 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #7444b8;
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 
 .logo {
@@ -51,8 +56,12 @@ button {
 
 
 /*hero section*/
-.hero-section {
-    height: 675px;
+
+/* Home Page */
+
+
+#Home {
+    height: 800px;
     background-color: #100421;
     display: flex;
     justify-content: space-between;
@@ -115,7 +124,7 @@ button {
 }
 
 .content {
-    width: 60%;
+    width: 45%;
     padding: 8%;
 }
 
@@ -155,11 +164,113 @@ button {
 picture
 */
 
-.picture {
+.home-picture {
     height: 70%;
     width: 50%;
     background-image: url(./image.png);
     background-size: cover;
+    border-radius: 10%;
+}
+
+
+/* About Me Page */
+
+#About {
+    height: 800px;
+    background-color: #100421;
+    
+}
+
+.content-pic {
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.icons i {
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+.points {
+    padding-top: 30px;
+}
+
+.points p{
+    padding-top: 18px;
+    padding-right: 100px;
+    color: #cfcdd1;
+}
+
+.value {
+    padding-top: 30px;
+}
+
+.value p{
+    padding-top: 18px;
+    color: #cfcdd1;
+}
+
+#available {
+    color: green;
+}
+
+.details {
+    display: flex;
+}
+
+.downl-button {
+    background-color: #7444b8;
+    margin-top: 30px;
+    display: inline-block;
+    padding: 2%;
+    border-radius: 10%;
+}
+
+#downl-button {
+    background-color: #7444b8;
+}
+
+.about-pic {
+    margin-top: 100px;
+    height: 80%;
+    width: 40%;
+    background-image: url(./about-image.png);
+    background-size: cover;
+    border-radius: 10%;
+}
+
+.insights {
+    margin-left: 25%;
+}
+
+.first {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.first p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #7444b8;
+}
+
+.second {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.second p {
+    color: #cfcdd1;
+    font-size: 1rem;
 }
 
 
@@ -195,7 +306,7 @@ footer{
     padding-left: 10px;
 }
 
-footer {
+.first-footer {
     display: flex;
     justify-content: space-between;
 }
@@ -238,4 +349,24 @@ li {
 .foot-ops p {
     color: #cfcdd1;
     margin-top:  15px; ;
+}
+
+.second-footer {
+    margin-left: 100px;
+    color: #cfcdd1;
+    font-size: 0.85rem;
+    height: 60px;
+    background-color: #100421;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.privacy {
+    display: flex;
+}
+
+
+.privacy p {
+    margin-right: 80px;
 }

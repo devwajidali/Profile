@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- navbar -->
+
+
     <header class="navbar">
         <div class="logo">
         
         </div>
         <div class="nav-ops">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Blog">Blog</a>
+            <a href="#Contact">Contact</a>
         </div>
         <div class="download">
             <button>Download CV</button>
@@ -26,115 +30,206 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
+
     <div class="hero-section">
-        <div class="content">
-            <p class="first-line">Hi, I'm</p>
-            <div class="second-line">
-                <p class="second-line1">Wajid</p>
-                <p class="second-line2">Ali</p>
-            </div>
-            <div class="third-line">
-                <div class="third-line1">
-                    Frontend Developer
+
+        <!-- Home Page -->
+
+
+        <section id="Home">
+            <div class="content">
+                <p class="first-line">Hi, I'm</p>
+                <div class="second-line">
+                    <p class="second-line1">Wajid</p>
+                    <p class="second-line2">Ali</p>
                 </div>
-                <div class="third-line2">
-                    |
+                <div class="third-line">
+                    <div class="third-line1">
+                        Frontend Developer
+                    </div>
+                    <div class="third-line2">
+                        |
+                    </div>
                 </div>
-            </div>
-            <div class="main-content">
-                I build responsive and user friendly website using HTML, CSS & JavaScript.
-            </div>
+                <div class="main-content">
+                    I build responsive and user friendly website using HTML, CSS & JavaScript.
+                </div>
         
-            <div class="buttons">
-                <div class="button1">
-                    <button id="hire">Hire Me</button>
-                    <i class="fa-solid fa-paper-plane"></i>
+                <div class="buttons">
+                    <div class="button1">
+                        <button id="hire">Hire Me</button>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="button2">
+                        <button>View My Work</button>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
                 </div>
-                <div class="button2">
-                    <button>View My Work</button>
-                    <i class="fa-solid fa-eye"></i>
-                </div>
-            </div>
         
-            <div class="links">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                <div class="links">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                </div>
             </div>
-        </div>
-        <div class="picture">
+            <div class="home-picture">
             
-        </div>
+            </div>
+
+        </section>
+
+        <!-- About Me -->
+
+        <section id="About">
+            <div class="content-pic">
+                <div class="content">
+                    <div class="first-line">
+                        <p style="color: #c19beb;">About Me</p>
+                    </div>
+                    <div class="second-line">
+                        <p class="second-line1">Who</p>
+                        <p class="second-line2">I Am</p>
+                    </div>
+                    <div class="main-content">
+                        I'm a passionate Frontend Developer who loves to create clean, modern and user friendly websites. I focus on writing clean code and creating great user experiences.
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fa-regular fa-user"></i>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-brands fa-upwork"></i>
+                        </div>
+                        <div class="points">
+                            <p>Name:</p>
+                            <p>From:</p>
+                            <p>Email:</p>
+                            <p>Phone:</p>
+                            <p>Freelancing:</p>
+                        </div>
+                        <div class="value">
+                            <p>Wajid Ali</p>
+                            <p>Sheikhupura, Pakistan</p>
+                            <p>devwajidali@gmail.com</p>
+                            <p>03043006555</p>
+                            <p id="available">Available</p>
+                        </div>
+                    </div>
+                    <div class="downl-button">
+                        <button id="downl-button">Download CV</button>
+                        <i class="fa-solid fa-download"></i>
+                    </div>
+                </div>
+                <div class="about-pic">
+                
+                </div>
+
+            </div>
+            
+            <div class="insights">
+                <div class="first">
+                    <p>2+</p>
+                    <p>20+</p>
+                    <p>15+</p>
+                    <p>3</p>
+                </div>
+                <div class="second">
+                    <p>Years Experience</p>
+                    <p>Projects Completed</p>
+                    <p>Happy Clients</p>
+                    <p>Technologies</p>
+                </div>
+            </div>
+        </section>
+
     </div>
 
+    <!-- footer -->
+
     <footer>
-        <div class="foot-box1">
-            <div class="logo"></div>
-            <div class="foot-content1">
-                Frontent Developer creating modern and responsive websites.
+        <div class="first-footer">
+            <div class="foot-box1">
+                <div class="logo"></div>
+                <div class="foot-content1">
+                    Frontent Developer creating modern and responsive websites.
+                </div>
+                <div class="foot-links">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                </div>
             </div>
-            <div class="foot-links">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+
+            <div class="foot-box2">
+                <div class="foot-maincontent">
+                    <h5>Quick Links</h5>
+                </div>
+                <div class="foot-ops">
+                    <ul>
+                        <a href="#Home">Home</a>
+                        <a href="#About">About</a>
+                        <a href="#Services">Services</a>
+                        <a href="#Projects">Projects</a>
+                        <a href="#Blog">Blog</a>
+                        <a href="#Contact">Contact</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="foot-box3">
+                <div class="foot-maincontent">
+                    <h5>Services</h5>
+                </div>
+                <div class="foot-ops">
+                    <ul>
+                        <li>Web Development</li>
+                        <li>UI/UX Design</li>
+                        <li>Responsive Design</li>
+                        <li>Performance</li>
+                        <li>Optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="foot-box4">
+                <div class="foot-maincontent">
+                    <h5>Resources</h5>
+                </div>
+                <div class="foot-ops">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git & Git Hub</li>
+                        <li>UI & UX Design</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="foot-box5">
+                <div class="foot-maincontent">
+                    <h5>Newsletter</h5>
+                </div>
+                <div class="foot-ops">
+                    <p>Subscribe to get updates about new articles and projects.</p>
+                </div>
             </div>
         </div>
-
-        <div class="foot-box2">
-            <div class="foot-maincontent">
-                <h5>Quick Links</h5>
+        
+        <div class="second-footer">
+            <div class="copyright">
+                <i class="fa-regular fa-copyright"></i>
+                2026 Wajid Ali. All rights reserved.
             </div>
-            <div class="foot-ops">
-                <ul>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                </ul>
+            <div class="privacy">
+                <p>Privacy Policy</p>
+                <p>Terms & Conditions</p>
             </div>
-        </div>
-
-        <div class="foot-box3">
-            <div class="foot-maincontent">
-                <h5>Services</h5>
-            </div>
-            <div class="foot-ops">
-                <ul>
-                    <li>Web Development</li>
-                    <li>UI/UX Design</li>
-                    <li>Responsive Design</li>
-                    <li>Performance</li>
-                    <li>Optimization</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="foot-box4">
-            <div class="foot-maincontent">
-                <h5>Resources</h5>
-            </div>
-            <div class="foot-ops">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Git & Git Hub</li>
-                    <li>UI & UX Design</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="foot-box5">
-            <div class="foot-maincontent">
-                <h5>Newsletter</h5>
-            </div>
-            <div class="foot-ops">
-                <p>Subscribe to get updates about new articles and projects.</p>
-            </div>
+            
         </div>
     </footer>
 </body>
