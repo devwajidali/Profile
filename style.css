@@ -341,7 +341,51 @@ picture
     display: flex;
     align-items: center;
     background-color:#1a1226;
-    
+    position: relative;
+}
+
+#web-development {
+    animation: enteringanimation 5s ease-in-out 3s infinite normal;
+}
+
+#responsive-design {
+    animation: enteringanimation 5s ease-in-out 3s infinite normal;
+}
+
+#ui-design {
+    animation: enteringanimation2 5s ease-in-out 3s infinite normal;
+}
+
+#performance {
+    animation: enteringanimation2 5s ease-in-out 3s infinite normal;
+}
+
+
+@keyframes enteringanimation {
+    from {
+        right: 20%;
+    }
+
+    50% {
+        right: 0;
+    }
+    to {
+        right: 0;
+    }
+}
+
+
+@keyframes enteringanimation2 {
+    from {
+        left: 20%;
+    }
+
+    50% {
+        left: 0;
+    }
+    to {
+        left: 0;
+    }
 }
 
 .services-logo {
