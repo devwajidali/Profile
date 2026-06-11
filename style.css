@@ -3,6 +3,8 @@
     padding: 0;
     color: white;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
 }
 
 /* Navbar */
@@ -140,7 +142,7 @@ button {
 
 .content {
     width: 45%;
-    padding: 8%;
+    padding: 8% 8% 0% 8%;
 }
 
 .buttons {
@@ -316,7 +318,6 @@ picture
 #Services {
     height: 800px;
     background-color: #100421;
-    
 }
 
 
@@ -368,6 +369,109 @@ picture
 }
 
 
+/* Projects page */
+
+#Projects {
+    height: 800px;
+    background-color: #100421;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projects-ops{
+    width: 20%;
+    height: 200px;
+    background-color:#1a1226;
+    border-radius: 10%;
+    margin: 1%;
+}
+
+
+.travel-img {
+    border-radius: 10% 10% 0 0;
+    height: 140px;
+    width: 100%;
+    background-image: url(traveller.webp);
+    background-size: cover;
+}
+
+.projects h4 {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+
+.projects p {
+    font-size: 0.85rem;
+    color: #cfcdd1;
+}
+
+.projects-content {
+    padding: 3%;
+}
+
+
+
+.portfolio-img {
+    border-radius: 10% 10% 0 0;
+    height: 140px;
+    width: 100%;
+    background-image: url(portfolio.jpg);
+    background-size: cover;
+}
+
+
+.ecommerce-img {
+    border-radius: 10% 10% 0 0;
+    height: 140px;
+    width: 100%;
+    background-image: url(ecommerce.jpg);
+    background-size: cover;
+}
+
+.amazon-img {
+    border-radius: 10% 10% 0 0;
+    height: 140px;
+    width: 100%;
+    background-image: url(amazon.jpg);
+    background-size: cover;
+}
+
+.dashboard-img {
+    border-radius: 10% 10% 0 0;
+    height: 140px;
+    width: 100%;
+    background-image: url(dashboard.webp);
+    background-size: cover;
+}
+
+
+.landingpage-img {
+    border-radius: 10% 10% 0 0;
+    height: 140px;
+    width: 100%;
+    background-image: url(landing\ page.jpg);
+    background-size: cover;
+}
+
+.blog-img {
+    border-radius: 10% 10% 0 0;
+    height: 140px;
+    width: 100%;
+    background-image: url(blog.jpg);
+    background-size: cover;
+}
+
+.netflix-img {
+    border-radius: 10% 10% 0 0;
+    height: 140px;
+    width: 100%;
+    background-image: url(netflix.jpg);
+    background-size: cover;
+}
 
 
 /* footer */
