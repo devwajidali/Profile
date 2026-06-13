@@ -9,7 +9,6 @@
 
 /* Navbar */
 
-
 header {
     height: 60px;
     background-color:#100421;
@@ -21,6 +20,9 @@ header {
     top: 0px;
     width: 100%;
     z-index: 1;
+}
+.navbar #menu {
+    display: none;
 }
 
 .logo {
@@ -40,15 +42,20 @@ header {
 
 
 button {
+    margin: 10px 10px 10px 0;
     border: 2px solid #271545;
     border-radius: 8px;
     padding: 8px;
     margin-right: 20px;
     font-size: 1rem;
-    background: #100421;
+    background-color: #100421;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#menu i{
+    margin: 0;
 }
 
 button i {
@@ -169,11 +176,11 @@ h2 {
 
 
 .links {
-    padding-top: 8%;
+    margin-top: 8%;
 }
 
 .links a {
-    padding: 1%;
+    margin-right: 1%;
 }
 
 
@@ -185,14 +192,20 @@ h2 {
 picture
 */
 
+.home-picbox {
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    width: 50%;
+}
+
+
 .home-picture {
     height: 650px;
-    width: 50%;
+    width: 100%;
     background-image: url(./image.png);
     background-size: cover;
-    position:absolute;
-    bottom: 0px;
-    right: 0px;
+    margin-top: 75px;
 }
 
 
@@ -540,12 +553,71 @@ h4 {
     color: #cfcdd1;
 }
 
+.art-button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+/* contact page */
+
+
+#Contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+form button {
+    margin-left: 10px;
+    width: 78%;
+}
+
+form p {
+    
+    margin-left: 10px;
+    color: #cfcdd1;
+}
+
+input {
+    border-radius: 8px;
+    width: 96%;
+    height: 40px;
+    background-color: #1c0e36;
+    border: none;
+    margin: 10px;
+}
+
+form div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.half-len {
+    width: 40%;
+}
+
+.full-len {
+    width: 100%;
+}
+
+#long {
+    width: 78%;
+}
 /* footer */
 
 footer{
     border-top: 1px solid #1c0e36;
     height: 300px;
-    background-color: #100421;
+    background-color:#100421;
 
 }
 
@@ -626,7 +698,7 @@ li {
 }
 
 .second-footer {
-    margin-left: 100px;
+    padding-left: 100px;
     color: #cfcdd1;
     font-size: 0.85rem;
     height: 60px;
@@ -640,7 +712,286 @@ li {
     display: flex;
 }
 
-
 .privacy p {
-    margin-right: 80px;
+    margin-right: 0.04%;
 }
+
+.menu-bar {
+    display: none;
+}
+
+/* mobile-version */
+
+
+@media (max-width:600px) {
+
+    /* header */
+
+    .nav-ops {
+        display: none;
+    }
+
+    .logo {
+        height: 30px;
+        margin: 10px;
+        width: 80px;
+    }
+
+    .navbar #cv{
+        display: none;
+    }
+
+    .navbar #menu {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+    }
+    
+
+    /* hero section */
+
+
+    /* home page */
+
+    #Home {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .home-picbox {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .home-picture {
+        width: 100%;
+        height: 300px;
+    }
+
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+    .color-h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    @keyframes typing {
+        0% {
+        width: 0;
+        }
+        60% {
+        width: 29ch;
+        }
+        100% {
+        width: 29ch;
+        }
+    }
+
+    .main-content {
+        font-size: 1rem;
+    }
+
+    /* about page */
+
+    .page-content {
+        height: 100vh;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    .explained-content {
+        font-size: 0.8rem;
+    }
+
+    .points p {
+        padding-right: 20px;
+        padding-top: 7px;
+        font-size: 0.9rem;
+    }
+
+    .icons {
+        padding-top: 10px;
+    }
+
+    .icons i {
+        padding-top: 11px;
+        font-size: 0.9rem;
+    }
+
+    .value {
+        padding-top: 10px;
+    }
+
+    .value p {
+        padding-top: 7px;
+        font-size: 0.9rem;
+    }
+
+    .points {
+        padding-top: 10px;
+    }
+
+
+    .heading {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .first {
+        display: none;
+    }
+    .second {
+        display: none;
+    }
+    .about-pic {
+        width: 100%;
+        height: 50%;
+        margin-top: 10px;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    .buttons {
+        margin-top: 8px;
+    }
+
+    /* service page */
+
+
+    .my-subservices {
+        width: 82%;
+        height: 130px;
+    }
+
+    .services-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .services-content p {
+        font-size: 0.9rem;
+    }
+    /* project */
+
+    .projects-ops {
+        width: 90%;
+        height: 180px;
+    }
+
+    #blog {
+        display: none;
+    }
+
+    #travel {
+        display: none;
+    }
+
+    #landingpage {
+        display: none;
+    }
+
+    #dashboard {
+        display: none;
+    }
+
+    #ecommerce {
+        display: none;
+    }
+
+    .project-img {
+        height: 140px;
+    }
+
+    /* blog */
+
+    .image {
+        height: 150px;
+        width: 90%;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .image-box {
+        height: 150px;
+        width: 100%;
+    }
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image-box {
+        display: flex;
+    }
+
+    .img-des p {
+        display: none;
+    }
+
+    .img-des h3 {
+        font-size: 1rem;
+    }
+
+    /* Contact page */
+
+    #Contact {
+        display: block;
+    }
+
+    form {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    form p {
+        display: none;
+    }
+
+    .full-len {
+        margin: 0;
+    }
+
+    .half-len {
+        margin: 0;
+    }
+
+    /* footer */
+
+    footer {
+        display: none;
+    }
+
+    /* menu bar */
+    .menu-bar {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #100421;
+        border-top: 1px solid #1a1226;
+        position: fixed;
+        bottom: 0;
+        font-size: 0.9rem;
+        align-items: center;
+    }
+}
+
+
+
+
