@@ -1,0 +1,15 @@
+@media (min-width:1023px) and (max-width:1440px) {
+    /* Typing animation */
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+        60% {
+            width: 32ch;
+        }
+        100% {
+            width: 32ch;
+        }
+    }
+
+}

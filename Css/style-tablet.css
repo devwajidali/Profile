@@ -1,0 +1,30 @@
+/* Tablet */
+@media (min-width:767px) and (max-width:1024px){
+
+    /* typing animation for frontend developer */
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+        60% {
+            width: 23ch;
+        }
+        100% {
+            width: 23ch;
+        }
+    }
+
+    /* Home Page */
+
+
+
+    .home-picture {
+        margin-top: 3vh;
+    }
+
+    /* About page */
+
+    .about-pic {
+        width: 50%;
+    }
+}

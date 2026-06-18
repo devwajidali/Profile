@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/style-largescreen.css">
+    <link rel="stylesheet" href="./Css/style-laptop.css">
+    <link rel="stylesheet" href="./Css/style-tablet.css">
+    <link rel="stylesheet" href="./Css/style-mobile.css">
 </head>
 <body>
 
@@ -14,8 +18,14 @@
 
     <header class="navbar">
         <div class="logo">
-        
+            <img src="./images/wajid-logo.jpeg">
         </div>
+
+        <input type="checkbox" id="toggle-menu">
+
+        <label for="toggle-menu" class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <div class="nav-ops">
             <a href="#Home">Home</a>
             <a href="#About">About</a>
@@ -24,8 +34,16 @@
             <a href="#Blog">Blog</a>
             <a href="#Contact">Contact</a>
         </div>
+        <script>
+        const navLinks = document.querySelectorAll(".nav-ops a");
+        const toggleMenu = document.getElementById("toggle-menu");
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                toggleMenu.checked = false;
+            });
+        });
+        </script>
         <button id="cv"><a href="#">Download CV<i class="fa-solid fa-download"></i></a></button>
-        <button id="menu"><a href="#menu-slide"><i class="fa-solid fa-bars"></i></a></button>
     </header>
 
     <!-- Hero Section -->
@@ -62,52 +80,11 @@
                     <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
                 </div>
             </div>
-            <div class="home-picbox">
-                <div class="home-picture">
-            
-                </div>
+            <div class="home-picture">
+                <img src="./images/my-image.png">
             </div>
-            <div class="tab-home">
-                <h4>What I Do</h4>
-                <div class="heading">
-                    <h2 >My Services</h2>
-                </div>
-                <div class="my-services-tab">
-                    <div  class="my-subservices-tab">
-                        <div class="services-logo">
-                            <i class="fa-brands fa-codepen"></i>
-                        </div>
-                        <div class="services-content">
-                            <h3>Web Development</h3>
-                        </div>
-                    </div>
-                    <div class="my-subservices-tab">
-                        <div class="services-logo">
-                            <i class="fa-brands fa-sketch"></i>
-                        </div>
-                        <div class="services-content">
-                            <h3>UI/UX Design</h3>
-                        </div>
-                    </div>
-                    <div class="my-subservices-tab">
-                        <div class="services-logo">
-                            <i class="fa-solid fa-tv"></i>
-                        </div>
-                        <div class="services-content">
-                            <h3>Responsive Design</h3>
-                        </div>
-                    </div>
-                    <div class="my-subservices-tab">
-                        <div class="services-logo">
-                            <i class="fa-solid fa-rocket"></i>
-                        </div>
-                        <div class="services-content">
-                            <h3>Performance Optimization</h3>
-                        </div>
-                    </div>
-                </div>
-
         </section>
+        
 
         <!-- About Me -->
 
@@ -150,7 +127,7 @@
                     </div>
                 </div>
                 <div class="about-pic">
-                
+                    <img src="./images/about-image.png">
                 </div>
 
             </div>
@@ -236,49 +213,63 @@
             </div>
             <div class="projects">
                 <div class="projects-ops" id="travel">
-                    <div class="project-img" id="travel-img"></div>
+                    <div class="project-img" id="travel-img">
+                        <img src="./images/traveller.webp">
+                    </div>
                     <div class="projects-content">
                         <h4>Travel Website</h4>
                         <p>HTML, CSS, JS</p>
                     </div>
                 </div>
                 <div class="projects-ops" id="porfolio">
-                    <div class="project-img" id="portfolio-img"></div>
+                    <div class="project-img" id="portfolio-img">
+                        <img src="./images/portfolio.jpg">
+                    </div>
                     <div class="projects-content">
                         <h4>Portfolio Website</h4>
                         <p>HTML, CSS, JS</p>
                     </div>
                 </div>
                 <div class="projects-ops" id="ecommerce">
-                    <div class="project-img" id="ecommerce-img"></div>
+                    <div class="project-img" id="ecommerce-img">
+                        <img src="./images/ecommerce.jpg">
+                    </div>
                     <div class="projects-content">
                         <h4>Ecommerce Website</h4>
                         <p>HTML, CSS, JS</p>
                     </div>
                 </div>
                 <div class="projects-ops" id="amazon-clone">
-                    <div class="project-img" id="amazon-img"></div>
+                    <div class="project-img" id="amazon-img">
+                        <img src="./images/amazon.jpg">
+                    </div>
                     <div class="projects-content">
                         <h4>Amazon Clone</h4>
                         <p>HTML, CSS, JS</p>
                     </div>
                 </div>
                 <div class="projects-ops" id="dashboard">
-                    <div class="project-img" id="dashboard-img"></div>
+                    <div class="project-img" id="dashboard-img">
+                        <img src="./images/dashboard.webp">
+                    </div>
                     <div class="projects-content">
                         <h4>Dashboard UI</h4>
                         <p>HTML, CSS, JS</p>
                     </div>
                 </div>
                 <div class="projects-ops" id="landingpage">
-                    <div class="project-img" id="landingpage-img"></div>
+                    <div class="project-img" id="landingpage-img">
+                        <img src="./images/landing-page.jpg">
+                    </div>
                     <div class="projects-content">
                         <h4>Landing Page</h4>
                         <p>HTML, CSS, JS</p>
                     </div>
                 </div>
                 <div class="projects-ops" id="blog">
-                    <div class="project-img" id="blog-img"></div>
+                    <div class="project-img" id="blog-img">
+                        <img src="./images/blog.jpg">
+                    </div>
                     <div class="projects-content">
                         <h4>
                             Blog Website
@@ -287,7 +278,9 @@
                     </div>
                 </div>
                 <div class="projects-ops" id="netflix">
-                    <div class="project-img" id="netflix-img"></div>
+                    <div class="project-img" id="netflix-img">
+                        <img src="./images/netflix.jpg">
+                    </div>
                     <div class="projects-content">
                         <h4>Netflix Clone</h4>
                         <p>HTML, CSS, JS</p>
@@ -314,21 +307,27 @@
             </div>
             <div class="images">
                 <div id="first-img" class="image-box">
-                    <div class="image" id="image1"></div>
+                    <div class="image" id="image1">
+                        <img src="./images/code.jpg">
+                    </div>
                     <div class="img-des">
                         <h3>How to build a Responsive Website.</h3>
                         <p>Learn the best practices for building responsive websites.</p>
                     </div>
                 </div>
                 <div id="second-img" class="image-box">
-                    <div class="image" id="image2"></div>
+                    <div class="image" id="image2">
+                        <img src="./images/js.png">
+                    </div>
                     <div class="img-des">
                         <h3>JavaScript Basics for Beginners.</h3>
                         <p>A beginner friendly to javascript basics</p>
                     </div>
                 </div>
                 <div id="third-img" class="image-box">
-                    <div class="image" id="image3"></div>
+                    <div class="image" id="image3">
+                        <img src="./images/ui.jpg">
+                    </div>
                     <div class="img-des">
                         <h3>Tips for Better UI/UX Design.</h3>
                         <p>Simple tips to improve your design skills.</p>
@@ -368,7 +367,6 @@
                         <p>Sheikhupura, Pakistan</p>
                     </div>
                 </div>
-                <p style="padding-top: 30px;">Follow Me</p>
                 <div class="links">
                     <a href="https://github.com/devwajidali" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
@@ -393,7 +391,7 @@
 
                 <div class="full-len">
                     <p>Message</p>
-                    <input id="long" type="text" placeholder="Write your message...">
+                    <textarea id="long" type="text" placeholder="Write your message..." rows="4"></textarea>
                 </div>
                 <button class="color-button"><a href="#">Send Message<i class="fa-solid fa-paper-plane"></i></a></button>
             </form>
@@ -402,15 +400,6 @@
 
     </div>
 
-    <!-- mobile menu bar -->
-    <div class="menu-bar">
-        <a href="#Home">Home</a>
-        <a href="#About">About</a>
-        <a href="#Services">Services</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Blog">Blog</a>
-        <a href="#Contact">Contact</a>
-    </div>
 
 
     <!-- footer -->
@@ -418,11 +407,13 @@
     <footer>
         <div class="first-footer">
             <div class="foot-box1">
-                <div class="logo"></div>
+                <div class="logo">
+                    <img src="./images/wajid-logo.jpeg">
+                </div>
                 <div class="foot-content1">
                     Frontent Developer creating modern and responsive websites.
                 </div>
-                <div class="foot-links">
+                <div>
                     <a href="https://github.com/devwajidali" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
